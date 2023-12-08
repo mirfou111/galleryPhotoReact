@@ -8,14 +8,14 @@ import Picture from "./Picture";
 // };
 const mesPhotos = [
     {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg","alt":"cat"},
-    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg","alt":"cat"},
-    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg","alt":"cat"},
-    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg","alt":"cat"},
-    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg","alt":"cat"},
-    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg","alt":"cat"},
-    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg","alt":"cat"},
-    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg","alt":"cat"},
-    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg","alt":"cat"},
+    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg","alt":"cat"},
+    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg","alt":"cat"},
+    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg","alt":"cat"},
+    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg","alt":"cat"},
+    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg","alt":"cat"},
+    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg","alt":"cat"},
+    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg","alt":"cat"},
+    {"src":"https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg","alt":"cat"},
 ]
 //const tableauObjets = Array(nombreObjets).fill(objetIdentique)
 
@@ -27,7 +27,7 @@ const Gallery = () => {
     });
 
     return (
-        <div>
+        <div className="gallery">
             {photos.map(function(photo) {
                 return <Picture key={photo.id} src={photo.src} alt={photo.alt} />;
             })}
